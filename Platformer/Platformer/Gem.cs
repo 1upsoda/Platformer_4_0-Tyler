@@ -25,6 +25,7 @@ namespace Platformer
 
         public const int PointValue = 30;
         public readonly Color Color = Color.Yellow;
+        private int randomColor;
 
         // The gem is animated from a base position along the Y axis.
         private Vector2 basePosition;
@@ -112,7 +113,14 @@ namespace Platformer
         /// </summary>
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(texture, Position, null, Color, 0.0f, origin, 1.0f, SpriteEffects.None, 0.0f);
+            Random myRandom = new Random();
+             int randomRed = (int)(myRandom.NextDouble() * 255);
+             int randomBlue = (int)(myRandom.NextDouble() * 255);
+             int randomGreen = (int)(myRandom.NextDouble() * 255);
+ 
+            Color randomColor = new Color(randomRed, randomGreen, randomBlue);
+           
+            spriteBatch.Draw(texture, Position, null, randomColor, 0.0f, origin, 1.0f, SpriteEffects.None, 0.0f);
         }
     }
 }
