@@ -54,3 +54,9 @@ C:\Users\tpar4829\Downloads\Platformer_4_0\Platformer\Platformer\obj\x86\Debug\P
 C:\Users\tpar4829\Downloads\Platformer_4_0\Platformer\Platformer\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\tpar4829\Downloads\Platformer_4_0\Platformer\Platformer\obj\x86\Debug\Platformer.exe
 C:\Users\tpar4829\Downloads\Platformer_4_0\Platformer\Platformer\obj\x86\Debug\Platformer.pdb
+C:\Users\tpar4829\Downloads\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Celebrate2.xnb
+C:\Users\tpar4829\Downloads\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Celebrate3.xnb
+C:\Users\tpar4829\Downloads\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Levels\3.txt
+C:\Users\tpar4829\Downloads\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_3.xnb
+C:\Users\tpar4829\Downloads\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_3.xnb
+C:\Users\tpar4829\Downloads\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_3.xnb

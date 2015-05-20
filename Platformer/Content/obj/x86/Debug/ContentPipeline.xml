@@ -89,7 +89,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\tpar4829\Downloads\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Celebrate.xnb</Output>
-      <Time>2015-05-19T07:53:41.0567821-06:00</Time>
+      <Time>2015-05-20T08:59:41.2405005-06:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Player\Die.png</Source>
@@ -415,6 +415,51 @@
       <Options>None</Options>
       <Output>C:\Users\tpar4829\Downloads\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sounds\Powerup.xnb</Output>
       <Time>2015-05-19T07:53:40.9163686-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\Celebrate2.png</Source>
+      <Name>Sprites\Player\Celebrate2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\tpar4829\Downloads\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Celebrate2.xnb</Output>
+      <Time>2015-05-20T09:04:47.3694934-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\Celebrate3.png</Source>
+      <Name>Sprites\Player\Celebrate3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\tpar4829\Downloads\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Sprites\Player\Celebrate3.xnb</Output>
+      <Time>2015-05-20T09:12:41.3329945-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Layer0_3.png</Source>
+      <Name>Backgrounds\Layer0_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\tpar4829\Downloads\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer0_3.xnb</Output>
+      <Time>2015-05-20T09:40:53.8839059-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Layer1_3.png</Source>
+      <Name>Backgrounds\Layer1_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\tpar4829\Downloads\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer1_3.xnb</Output>
+      <Time>2015-05-20T09:40:53.8995064-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Layer2_3.png</Source>
+      <Name>Backgrounds\Layer2_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\tpar4829\Downloads\Platformer_4_0\Platformer\Platformer\bin\x86\Debug\Content\Backgrounds\Layer2_3.xnb</Output>
+      <Time>2015-05-20T09:40:53.8995064-06:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

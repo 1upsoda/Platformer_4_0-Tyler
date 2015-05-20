@@ -45,6 +45,12 @@ Content\Sounds\PlayerFall.xnb
 Content\Sounds\PlayerJump.xnb
 Content\Sounds\PlayerKilled.xnb
 Content\Sounds\Powerup.xnb
+Content\Sprites\Player\Celebrate2.xnb
+Content\Sprites\Player\Celebrate3.xnb
+Content\Backgrounds\Layer0_3.xnb
+Content\Backgrounds\Layer1_3.xnb
+Content\Backgrounds\Layer2_3.xnb
+Content\Levels\3.txt
 Content\Levels\0.txt
 Content\Levels\2.txt
 Content\Levels\1.txt

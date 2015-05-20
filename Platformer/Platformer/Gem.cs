@@ -26,6 +26,11 @@ namespace Platformer
         public const int PointValue = 30;
         public readonly Color Color = Color.Yellow;
         private int randomColor;
+        private int timing = 0;
+        private Random myRandom;
+        private int randomBlue;
+        private int randomRed;
+        private int randomGreen;
 
         // The gem is animated from a base position along the Y axis.
         private Vector2 basePosition;
@@ -78,6 +83,10 @@ namespace Platformer
             texture = Level.Content.Load<Texture2D>("Sprites/Gem");
             origin = new Vector2(texture.Width / 2.0f, texture.Height / 2.0f);
             collectedSound = Level.Content.Load<SoundEffect>("Sounds/GemCollected");
+            myRandom = new Random();
+            randomRed = (int)(myRandom.NextDouble() * 255);
+            randomBlue = (int)(myRandom.NextDouble() * 255);
+            randomGreen = (int)(myRandom.NextDouble() * 255);
         }
 
         /// <summary>
@@ -113,13 +122,21 @@ namespace Platformer
         /// </summary>
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            Random myRandom = new Random();
-             int randomRed = (int)(myRandom.NextDouble() * 255);
-             int randomBlue = (int)(myRandom.NextDouble() * 255);
-             int randomGreen = (int)(myRandom.NextDouble() * 255);
- 
+            
+            if (timing == 20)
+            {
+
+                randomRed = (int)(myRandom.NextDouble() * 255);
+                randomBlue = (int)(myRandom.NextDouble() * 255);
+                randomGreen = (int)(myRandom.NextDouble() * 255);
+                timing = 0;
+                
+            }
+            if (timing < 20)
+            {
+                timing++;
+            }
             Color randomColor = new Color(randomRed, randomGreen, randomBlue);
-           
             spriteBatch.Draw(texture, Position, null, randomColor, 0.0f, origin, 1.0f, SpriteEffects.None, 0.0f);
         }
     }
