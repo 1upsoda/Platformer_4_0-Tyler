@@ -47,6 +47,8 @@ namespace Platformer
         private Point exit = InvalidPosition;
         private static readonly Point InvalidPosition = new Point(-1, -1);
 
+        public int totalScore;
+
         // Level game state.
         private Random random = new Random(354668); // Arbitrary, but constant seed
 
@@ -78,6 +80,7 @@ namespace Platformer
         ContentManager content;
 
         private SoundEffect exitReachedSound;
+        public int seconds;
 
         #region Loading
 
@@ -204,6 +207,8 @@ namespace Platformer
                     return LoadEnemyTile(x, y, "MonsterC");
                 case 'D':
                     return LoadEnemyTile(x, y, "MonsterD");
+                case 'E':
+                    return LoadEnemyTile(x, y, "MonsterE");
 
                 // Platform block
                 case '~':
@@ -389,7 +394,7 @@ namespace Platformer
             else if (ReachedExit)
             {
                 // Animate the time being converted into points.
-                int seconds = (int)Math.Round(gameTime.ElapsedGameTime.TotalSeconds * 100.0f);
+                seconds = (int)Math.Round(gameTime.ElapsedGameTime.TotalSeconds * 100.0f);
                 seconds = Math.Min(seconds, (int)Math.Ceiling(TimeRemaining.TotalSeconds));
                 timeRemaining -= TimeSpan.FromSeconds(seconds);
                 score += seconds * PointsPerSecond;

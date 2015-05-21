@@ -53,7 +53,8 @@ namespace Platformer
         // levels in our content are 0-based and that all numbers under this constant
         // have a level file present. This allows us to not need to check for the file
         // or handle exceptions, both of which can add unnecessary time to level loading.
-        private const int numberOfLevels = 4;
+        private const int numberOfLevels = 8;
+        private int totalScore = 0;
 
         public PlatformerGame()
         {
@@ -220,7 +221,13 @@ namespace Platformer
             // Draw score
             float timeHeight = hudFont.MeasureString(timeString).Y;
             DrawShadowedString(hudFont, "SCORE: " + level.Score.ToString(), hudLocation + new Vector2(0.0f, timeHeight * 1.2f), Color.Yellow);
-           
+
+            DrawShadowedString(hudFont, "LEVEL: " + levelIndex, hudLocation + new Vector2(0.0f, timeHeight * 2.3f), Color.Yellow);
+            if (timeString == "TIME: 00:00")
+            {
+                totalScore += level.Score;
+            }
+            DrawShadowedString(hudFont, "TOTAL SCORE: " + totalScore.ToString(), hudLocation + new Vector2(0.0f, timeHeight * 3.4f), Color.Yellow);
             // Determine the status overlay message to show.
             Texture2D status = null;
             if (level.TimeRemaining == TimeSpan.Zero)
