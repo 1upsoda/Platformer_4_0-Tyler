@@ -55,6 +55,7 @@ namespace Platformer
         // or handle exceptions, both of which can add unnecessary time to level loading.
         private const int numberOfLevels = 8;
         private int totalScore = 0;
+        private bool scoreAdded = false;
 
         public PlatformerGame()
         {
@@ -145,7 +146,10 @@ namespace Platformer
                 else if (level.TimeRemaining == TimeSpan.Zero)
                 {
                     if (level.ReachedExit)
+                    {
                         LoadNextLevel();
+                        scoreAdded = false;
+                    }
                     else
                         ReloadCurrentLevel();
                 }
@@ -222,10 +226,11 @@ namespace Platformer
             float timeHeight = hudFont.MeasureString(timeString).Y;
             DrawShadowedString(hudFont, "SCORE: " + level.Score.ToString(), hudLocation + new Vector2(0.0f, timeHeight * 1.2f), Color.Yellow);
 
-            DrawShadowedString(hudFont, "LEVEL: " + levelIndex, hudLocation + new Vector2(0.0f, timeHeight * 2.3f), Color.Yellow);
-            if (timeString == "TIME: 00:00")
+            DrawShadowedString(hudFont, "LEVEL: " + (levelIndex + 1), hudLocation + new Vector2(0.0f, timeHeight * 2.3f), Color.Yellow);
+            if (timeString == "TIME: 00:00" && !scoreAdded)
             {
                 totalScore += level.Score;
+                scoreAdded = true;
             }
             DrawShadowedString(hudFont, "TOTAL SCORE: " + totalScore.ToString(), hudLocation + new Vector2(0.0f, timeHeight * 3.4f), Color.Yellow);
             // Determine the status overlay message to show.

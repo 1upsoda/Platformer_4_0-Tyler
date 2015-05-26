@@ -385,6 +385,7 @@ namespace Platformer
             AccelerometerState accelState,
             DisplayOrientation orientation)
         {
+            ///LoadTile
             // Pause while the player is dead or time is expired.
             if (!Player.IsAlive || TimeRemaining == TimeSpan.Zero)
             {
